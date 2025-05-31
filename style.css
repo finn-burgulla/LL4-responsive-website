@@ -1,0 +1,111 @@
+/* Basic reset for margin and padding */
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the header */
+header {
+  background-color: #4fc3f7; /* Light blue background */
+  padding: 16px;
+  display: flex;
+  flex-direction: column; /* Stack items vertically on mobile */
+  align-items: center;
+}
+
+/* Style the logo */
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 12px; /* Space below logo on mobile */
+}
+
+/* Style the navigation links */
+.nav-links {
+  list-style: none; /* Remove bullet points */
+  display: flex;
+  flex-direction: column; /* Stack links vertically on mobile */
+  gap: 10px; /* Space between links */
+  align-items: center;
+}
+
+/* Style for each link */
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1em;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+/* Add a simple hover effect */
+.nav-links a:hover {
+  background-color: #0288d1;
+}
+
+/* Desktop styles: show nav links in a row */
+@media (min-width: 600px) {
+  header {
+    flex-direction: row; /* Place logo and nav side by side */
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    margin-bottom: 0; /* Remove bottom margin on desktop */
+  }
+  .nav-links {
+    flex-direction: row; /* Show links in a row */
+    gap: 20px; /* More space between links */
+  }
+}
+
+/* Hero section styles */
+.hero {
+  /* Make the hero section take up the full viewport height */
+  height: 100vh;
+  /* Add a soft green-blue gradient background */
+  background: linear-gradient(135deg, #e6f5ea 0%, #a8dadc 100%);
+  /* Center content vertically and horizontally */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Headline style */
+.hero h1 {
+  color: #15616d; /* dark blue-green */
+  font-size: 3em; /* larger font size */
+  font-weight: bold; /* make it bold */
+  margin-bottom: 16px;
+  text-shadow: 1px 2px 8px #b2dfdb; /* subtle shadow for prominence */
+}
+
+/* Paragraph style */
+.hero p {
+  color: #388e3c; /* deep green */
+  font-size: 1.1em;
+  margin-bottom: 24px;
+  max-width: 400px;
+}
+
+/* CTA button style */
+.cta-btn {
+  display: inline-block;
+  background-color: #81c784; /* soft green */
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+/* Button hover effect */
+.cta-btn:hover {
+  background-color: #388e3c; /* deeper green */
+}
