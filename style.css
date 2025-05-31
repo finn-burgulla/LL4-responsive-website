@@ -109,3 +109,104 @@ header {
 .cta-btn:hover {
   background-color: #388e3c; /* deeper green */
 }
+
+/* Destinations section styles */
+.destinations {
+  padding: 32px 16px;
+  background: #f4f9f4;
+  text-align: center;
+}
+
+.destinations h2 {
+  color: #15616d;
+  margin-bottom: 24px;
+  font-size: 2em;
+}
+
+/* Cards container */
+.cards {
+  display: flex;
+  flex-direction: column; /* Stack cards vertically on mobile */
+  gap: 24px;
+  align-items: center;
+}
+
+/* Individual card styles */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(21, 97, 109, 0.08);
+  padding: 16px;
+  max-width: 320px;
+  width: 100%;
+  text-align: left;
+  transition: box-shadow 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 16px rgba(21, 97, 109, 0.15);
+}
+
+/* Card image styles */
+.card img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  display: block;
+}
+
+/* Card title */
+.card h3 {
+  margin: 0 0 8px 0;
+  color: #15616d;
+  font-size: 1.2em;
+}
+
+/* Card description */
+.card p {
+  margin: 0;
+  color: #388e3c;
+  font-size: 1em;
+}
+
+/* Call-to-Action section styles */
+.cta-section {
+  background: linear-gradient(135deg, #a8dadc 0%, #e6f5ea 100%);
+  text-align: center;
+  padding: 40px 16px;
+}
+
+.cta-section h2 {
+  color: #15616d;
+  margin-bottom: 12px;
+  font-size: 2em;
+}
+
+.cta-section p {
+  color: #388e3c;
+  margin-bottom: 20px;
+  font-size: 1.1em;
+}
+
+/* Responsive styles for screens 600px and wider */
+@media (min-width: 600px) {
+  /* ...existing header/nav styles... */
+
+  /* Cards align horizontally on desktop */
+  .cards {
+    flex-direction: row; /* Row layout for cards */
+    justify-content: center;
+    gap: 32px;
+  }
+  .card {
+    max-width: 280px;
+  }
+}
+
+/* Make images responsive everywhere */
+img {
+  max-width: 100%;
+  height: auto;
+}
